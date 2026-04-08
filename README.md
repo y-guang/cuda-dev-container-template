@@ -1,6 +1,6 @@
 # CUDA Dev Container
 
-This is a VSCode dev container configuration for CUDA development and my personal use.
+This is a VSCode dev container configuration for CUDA development, designed for personal use with a minimal toolset.
 
 ## Usage
 
