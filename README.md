@@ -9,6 +9,12 @@ This is a VSCode dev container configuration for CUDA development, designed for 
 
 ## Enviroment Testing
 
+### Python
+
+```bash
+uv run python main.py
+```
+
 ### Cuda
 
 ```bash
