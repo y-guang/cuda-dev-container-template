@@ -18,7 +18,8 @@
   },
   "features": {
     "ghcr.io/devcontainers/features/common-utils:2": {},
-    "ghcr.io/devcontainer-community/devcontainer-features/astral.sh-uv:1": {}
+    "ghcr.io/devcontainer-community/devcontainer-features/astral.sh-uv:1": {},
+    "ghcr.io/devcontainers-extra/features/cmake:1": {}
   },
   // "postCreateCommand": "uv sync",
   "customizations": {
