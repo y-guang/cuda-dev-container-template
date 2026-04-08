@@ -1,0 +1,36 @@
+{
+  "name": "cuda-dev",
+  "image": "nvidia/cuda:13.1.0-devel-ubuntu22.04",
+  "runArgs": [
+    "--gpus=all"
+  ],
+  "mounts": [
+    "source=uv-cache,target=/home/vscode/.cache/uv/cache,type=volume",
+    "source=uv-python,target=/home/vscode/.cache/uv/python,type=volume"
+  ],
+  "containerEnv": {
+    "NVIDIA_VISIBLE_DEVICES": "all",
+    "NVIDIA_DRIVER_CAPABILITIES": "compute,utility",
+    "UV_CACHE_DIR": "/home/vscode/.cache/uv/cache",
+    "UV_PYTHON_INSTALL_DIR": "/home/vscode/.cache/uv/python",
+    "UV_LINK_MODE": "copy",
+    "UV_PROJECT_ENVIRONMENT": "/home/vscode/.venv"
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {},
+    "ghcr.io/devcontainer-community/devcontainer-features/astral.sh-uv:1": {}
+  },
+  // "postCreateCommand": "uv sync",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools-extension-pack",
+        "ms-vscode.cmake-tools",
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "tamasfe.even-better-toml",
+        "NVIDIA.nsight-vscode-edition"
+      ]
+    }
+  }
+}
