@@ -9,4 +9,10 @@ This is a VSCode dev container configuration for CUDA development for my persona
 
 ## Note
 
+### python environment
+
 - `python` environment is in `/home/vscode/.venv`.
+
+### git setup
+
+if you fail to push to git from the container, see [Sharing Git credentials with your container](https://code.visualstudio.com/remote/advancedcontainers/sharing-git-credentials) for details about git credential sharing between host and container.
